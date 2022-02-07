@@ -1,6 +1,6 @@
 const typed = document.querySelector('.typed');
 const cursor = document.querySelector('.cursor');
-const texts = ['Website', 'Blog', 'Next Big Idea'];
+const texts = ['Portfolio', 'Content', 'Resume', 'Blog', 'Business', 'Next Big Idea'];
 const typeDelay = 200;
 const eraseDelay = 100;
 const newTextDelay = 2000;
@@ -42,3 +42,25 @@ function erase(){
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(type, newTextDelay);
 });
+
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+let navbar = document.getElementById("navBar");
+let logo = document.getElementById("start");
+
+// Get the offset position of the navbar
+let sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+    if (document.documentElement.scrollTop >= 25) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+// document.getElementById('basic').onclick = function() {
+//     document.getElementById('not_yet').a
+// };

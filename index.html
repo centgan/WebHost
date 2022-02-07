@@ -10,20 +10,78 @@
 <body>
 <canvas id="bg"></canvas>
 <main>
-  <div class="wrapper">
-    <h1>Bring Your <span class="typed"></span><span class="cursor">&nbsp</span></h1>
-  </div>
-<!--  <nav>-->
-<!--    <div class="logo">-->
+  <nav id="navBar">
+    <div class="logo">
+      <a href="index.html">
+        <button id="return">WebHosting</button>
+      </a>
 <!--      <h4>WebHosting</h4>-->
-<!--    </div>-->
-<!--    <ul class="nav-links">-->
-<!--      <li><a href="#">Home</a></li>-->
-<!--      <li><a href="#">Portfolio</a></li>-->
-<!--      <li><a href="#">About me</a></li>-->
-<!--      <li><a href="#">Contacts</a></li>-->
-<!--    </ul>-->
-<!--  </nav>-->
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Professional Services</a></li>
+      <li><a href="#">Contact us</a></li>
+    </ul>
+    <div class="sign">
+      <a href="Sign_in.html">
+        <button type="button" id="log">Sign In</button>
+      </a>
+    </div>
+  </nav>
+  <div class="wrapper">
+    <h1>Bring Your</h1>
+    <h1 id="typeText"><span class="typed"></span><span class="cursor">&nbsp</span></h1>
+    <h1>To The Web</h1>
+    <button id="start" type="button">Get Started</button>
+  </div>
+  <div class="info">
+    <h1 id="intro">Be proud of the website YOU put up</h1>
+    <p id="ded">We've been dedicated since day one to bring you the best web hosting experience. Here you get a more
+      personalized experience at a fraction of the costs compared to big hosting companies. The hosting platform that
+      you choose matters a lot and so here at ... all packages come standard with 99.9% uptime, one-click migration
+      services and a free SSL certificate!
+    </p>
+  </div>
+  <div class="container">
+    <div class="item">
+      <h1>Basic</h1>
+      <h2>$0.99</h2>
+      <h4>/month</h4>
+      <ul class="given">
+        <li>Pricing</li>
+        <li>Professional Services</li>
+        <li>Contact us</li>
+      </ul>
+      <a href="pricing.html">
+        <button class="learn" id="basic">Learn more!</button>
+      </a>
+    </div>
+    <div class="item">
+      <h1>Premium</h1>
+      <h2>$3.99</h2>
+      <h4>/month</h4>
+      <ul class="given">
+        <li>Pricing</li>
+        <li>Professional Services</li>
+        <li>Contact us</li>
+      </ul>
+      <a href="pricing.html">
+        <button class="learn" id="premium">Learn more!</button>
+      </a>
+    </div>
+    <div class="item">
+      <h1>Don't like </h1>
+      <h1>what you see?</h1>
+      <h2>Get a customized</h2>
+      <h2>plan</h2>
+      <a href="pricing.html">
+        <button class="learn" id="custom">Learn more!</button>
+      </a>
+    </div>
+  </div>
+  <footer>
+    <p>this is the ending</p>
+  </footer>
 </main>
 <script type="module" src="/main.js"></script>
 <script src="app.js"></script>
