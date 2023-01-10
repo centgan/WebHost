@@ -1,2 +1,2 @@
 # WebHost
-To other peoples websites at a cost.
+To host other peoples websites at a cost.
